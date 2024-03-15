@@ -14,6 +14,7 @@ public class ChopStick {
         myNumber = ++stickCount;
     }
 
+
     public boolean tryTake(int delay) throws InterruptedException {
         if (!iAmFree) {
             boolean locked = lock.tryLock(300, java.util.concurrent.TimeUnit.MILLISECONDS);
